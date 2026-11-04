@@ -130,6 +130,35 @@ ul.sci-list li::before{content:"";position:absolute;left:4px;top:8px;width:8px;h
 footer{background:var(--navy);color:#94a3b8;text-align:center;padding:32px 24px;border-top:3px solid var(--blue);font-size:13px}
 footer p{margin:0 0 6px;color:#f1f5f9;font-weight:600}
 
+/* Back to Top Button Styling */
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: var(--navy);
+  color: #ffffff;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  transition: all 0.2s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+
+#backToTopBtn:hover {
+  background-color: var(--blue);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
 @media(max-width:900px){
   .hero-inner{grid-template-columns:1fr}
   .section-grid-2{grid-template-columns:1fr}
@@ -1138,6 +1167,11 @@ footer p{margin:0 0 6px;color:#f1f5f9;font-weight:600}
   <small> Geoscience  ·  Environment  ·  Water Resources  ·   Geomatics / UAV </small>
 </footer>
 
+<!-- Back to Top Button -->
+<button id="backToTopBtn" onclick="scrollToTop()" title="Go to top" aria-label="Scroll to top">
+  ▲
+</button>
+
 <script>
 function setFilter(cat, btn) {
   document.querySelectorAll('.chip-btn').forEach(b => b.classList.remove('active'));
@@ -1163,6 +1197,24 @@ function filterProjects() {
     } else {
       card.style.display = 'none';
     }
+  });
+}
+
+// Back to top scroll functionality
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    backToTopBtn.style.display = "flex";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+};
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
   });
 }
 </script>
