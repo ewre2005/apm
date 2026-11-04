@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Professional Profile & Portfolio of Amit Prakash Multaniya, Geoscientist and Scientific Officer.">
+<title>Amit Prakash Multaniya | Geoscientist</title>
+<style>
+:root{--navy:#c24440;--navy-light:#ab8a8a;--blue:#b52e19;--blue-accent:#0369a1;--emerald:#059669;--slate:#f8fafc;--border:#e2e8f0;--ink:#0f172a;--muted:#475569;--card-bg:#ffffff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--slate);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;background-image:radial-gradient(#cbd5e1 1px,transparent 1px);background-size:24px 24px}
+a{color:var(--blue-accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Header */
+.site-header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:100;box-shadow:0 4px 20px rgba(11,30,54,0.15);border-bottom:3px solid var(--blue)}
+.nav-wrap{max-width:1200px;margin:auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px;color:#fff;letter-spacing:-0.01em}
+.brand-icon img {
+    width: 100%;
+    height: 100%;
+    max-width: 42px;
+    max-height: 42px;
+    object-fit: contain;
+    display: block;
+}
+.brand-divider{opacity:0.4;font-weight:300;margin:0 2px}
+.brand-title{color:#93c5fd;font-weight:500}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:6px;transition:all 0.2s}
+nav a:hover,nav a:focus{color:#fff;background:rgba(255,255,255,0.1);text-decoration:none}
+
+/* Hero */
+.hero{background:var(--hero-bg);color:var(--navy);padding:44px 24px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+.hero-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:auto 1fr 320px;gap:32px;align-items:center;position:relative;z-index:1}
+.profile-photo-wrap{position:relative;width:200px;height:200px;flex-shrink:0}
+.profile-photo{width:200px;height:200px;border-radius:50%;object-fit:cover;border:4px solid #ffffff;box-shadow:0 10px 25px -5px rgba(2,132,199,0.25),0 0 0 2px var(--blue)}
+.eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:0.1em;background:#e0f2fe;color:var(--blue-accent);border:1px solid #bae6fd;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;margin-bottom:10px}
+h1{font-size:clamp(20px,3.2vw,20px);font-weight:800;line-height:1.15;margin:0 0 8px;letter-spacing:-0.02em;color:var(--blue-accent)}
+.role{font-size:17px;color:var(--blue-accent);font-weight:700;margin:0 0 4px}
+.affiliation{color:var(--blue-accent);font-size:13px;margin:0 0 16px}
+.contact-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.contact-chip{background:#ffffff;border:1px solid #cbd5e1;border-radius:8px;padding:6px 12px;font-size:12px;color:var(--navy);box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.contact-chip a{color:var(--blue-accent);font-weight:600}
+
+.hero-stats-card{background:#ffffff;border:1px solid #cbd5e1;border-radius:16px;padding:20px;box-shadow:0 10px 25px -5px rgba(15,23,42,0.05)}
+.hero-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:12px;text-align:center}
+.stat-num{font-size:26px;font-weight:800;color:var(--blue-accent);line-height:1}
+.stat-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-top:4px;font-weight:700}
+
+/* Main Layout */
+main{max-width:1200px;margin:32px auto 64px;padding:0 24px}
+.card-section{margin-bottom:32px}
+.section-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px}
+
+.card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05),0 2px 4px -1px rgba(0,0,0,0.03)}
+.card-header{background:linear-gradient(to right,var(--navy),var(--navy-light));color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.card-header h2{margin:0;font-size:17px;font-weight:700;display:flex;align-items:center;gap:10px;letter-spacing:-0.01em}
+.card-header h2 span{font-size:18px}
+.card-body{padding:22px}
+
+/* Lists & Tables */
+ul.sci-list{list-style:none;padding:0;margin:0}
+ul.sci-list li{position:relative;padding:0 0 12px 24px;font-size:14px;color:var(--ink)}
+ul.sci-list li:last-child{padding-bottom:0}
+ul.sci-list li::before{content:"";position:absolute;left:4px;top:8px;width:8px;height:8px;border-radius:2px;background:var(--blue);transform:rotate(45deg)}
+
+.tech-table{width:100%;border-collapse:collapse;font-size:13px}
+.tech-table th,.tech-table td{padding:12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border)}
+.tech-table th{width:28%;background:#f1f5f9;color:var(--navy);font-weight:700}
+.tech-table tr:last-child th,.tech-table tr:last-child td{border-bottom:0}
+
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.info-item{background:#f8fafc;border:1px solid #e2e8f0;padding:12px 16px;border-radius:8px}
+.info-item label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted);font-weight:700;margin-bottom:3px}
+.info-item span{font-size:14px;font-weight:600;color:var(--navy)}
+
+/* Graphical Projects Section */
+.portfolio-controls{display:flex;flex-direction:column;gap:16px;margin-bottom:20px;background:#f8fafc;padding:16px;border-radius:10px;border:1px solid var(--border)}
+.search-box input{width:100%;padding:10px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;outline:none}
+.search-box input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(2,132,199,0.15)}
+.filter-chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip-btn{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;color:var(--muted);cursor:pointer;transition:all 0.2s}
+.chip-btn:hover{background:#e2e8f0}
+.chip-btn.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* Category Breakdown Bars */
+.cat-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:20px}
+.cat-stat-card{background:#fff;border:1px solid var(--border);border-left:4px solid var(--blue);padding:10px 14px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.cat-stat-title{font-size:15px;font-weight:700;color:green;text-transform:uppercase}
+.cat-stat-val{font-size:12px;font-weight:800;color:#828773}
+
+.project-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.project-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px;display:flex;flex-direction:column;justify-content:space-between;transition:transform 0.2s,box-shadow 0.2s}
+.project-card:hover{transform:translateY(-2px);box-shadow:0 10px 15px -3px rgba(0,0,0,0.08)}
+.project-tag{display:inline-block;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:0.05em;padding:3px 8px;border-radius:4px;margin-bottom:8px}
+.tag-hydro{background:#e0f2fe;color:#0369a1}
+.tag-eng{background:#fef3c7;color:#92400e}
+.tag-geo{background:#f3e8ff;color:#6b21a8}
+.tag-gis{background:#dcfce7;color:#166534}
+.tag-uav{background:#ffe4e6;color:#9f1239}
+.tag-env{background:#ccfbf1;color:#115e59}
+
+.project-id{font-size:11px;font-weight:800;color:var(--muted);margin-bottom:4px}
+.project-title{font-size:13px;font-weight:700;color:#01124a;line-height:1.4;margin-bottom:12px}
+.project-meta{font-size:11px;color:var(--muted);border-top:1px solid #f1f5f9;padding-top:10px;margin-top:auto;display:flex;flex-direction:column;gap:4px}
+.project-meta div{display:flex;gap:6px;align-items:baseline}
+
+/* Publications Section */
+.pub-list{display:flex;flex-direction:column;gap:14px}
+.pub-item{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px;display:grid;grid-template-columns:70px 1fr;gap:16px;align-items:start}
+.pub-year{background:#f1f5f9;color:var(--navy);font-weight:800;font-size:13px;padding:6px;border-radius:6px;text-align:center}
+.pub-content{font-size:13px;line-height:1.5}
+.pub-authors{font-weight:600;color:var(--navy)}
+.pub-title{font-weight:700;color:var(--ink);margin:3px 0}
+.pub-venue{color:var(--muted);font-style:italic}
+.pub-doi{margin-top:6px;font-size:12px}
+
+/* Timeline */
+.timeline{display:grid;gap:12px}
+.timeline-item{display:grid;grid-template-columns:100px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--border)}
+.timeline-item:last-child{border-bottom:0}
+.timeline-date{font-weight:800;color:var(--navy);font-size:12px}
+.timeline-title{font-weight:700;font-size:13px;color:var(--ink)}
+.timeline-sub{font-size:12px;color:var(--muted)}
+
+/* Footer */
+footer{background:var(--navy);color:#94a3b8;text-align:center;padding:32px 24px;border-top:3px solid var(--blue);font-size:13px}
+footer p{margin:0 0 6px;color:#f1f5f9;font-weight:600}
+
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .section-grid-2{grid-template-columns:1fr}
+  .pub-item{grid-template-columns:1fr;gap:8px}
+  .pub-year{display:inline-block;width:auto;text-align:left;padding:3px 8px}
+  .timeline-item{grid-template-columns:1fr;gap:2px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <div class="brand">
+      <span class="brand-icon"><img src="https://cdn-icons-png.flaticon.com/128/13745/13745314.png"
+     alt="Website Logo"
+     class="university-logo"></span>
+      <span>Amit Prakash Multaniya</span></p>
+  
+      
+     
+    </div>
+    <nav aria-label="Main Navigation">
+      <a href="#expertise">Research Interest</a>
+      <a href="#personal">Education &amp; Details</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#publications">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="profile-photo-wrap">
+      <img class="profile-photo" src="https://raw.githubusercontent.com/ewre2005/apm/refs/heads/main/Amit%20.png" alt="Amit Prakash Multaniya Profile Photo" onerror="this.onerror=null; this.src='https://placehold.co/150x150/0284c7/ffffff?text=APM';">
+
+
+    </div>
+    <div>
+      <span class="eyebrow">Geoscience · Geomatics/UAV &amp; Geospatial Specialist</span>
+      <h1>Amit Prakash Multaniya</h1>
+      <p class="role"> Scientific Officer</p>
+      <p class="affiliation">Department of Environmental &amp; Water Resources Engineering<br>University Teaching Department, CSVTU Bhilai, Chhattisgarh, India</p>
+      <div class="contact-row">
+        <div class="contact-chip">📞 <a href="tel:+918989568770">+91 8989568770</a></div>
+        <div class="contact-chip">✉️ <a href="mailto:amultaniya@gmail.com">amultaniya@gmail.com</a></div>
+        <div class="contact-chip">📍<a href="https://www.google.co.in/maps/place/Gokuldham+Residency+Raipur/@21.2163622,81.5955784,222m/data=!3m1!1e3!4m6!3m5!1s0x3a28de870f9cd737:0x1aa97f8b28a1d903!8m2!3d21.2160912!4d81.5960542!16s%2Fg%2F11bwm5q50d?entry=ttu&g_ep=EgoyMDI2MTEwMS4wIKXMDSoASAFQAw%3D%3D">A-302, Gokuldham Residency, Mahadevghat, Raipur, CG-492013, India</a></div>
+      </div>
+    </div>
+    <div class="hero-stats-card">
+      <div class="hero-stat-grid">
+        <div class="stat-box">
+          <div class="stat-num">110</div>
+          <div class="stat-label">Consultancy Projects</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">13</div>
+          <div class="stat-label">Publications</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Trainings Attended</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">DGCA</div>
+          <div class="stat-label">Certified Drone Pilot</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<main>
+
+  <!-- SECTION 1: Research Interests & Technical Tools & Software -->
+  <div class="section-grid-2" id="expertise">
+    <section class="card">
+      <div class="card-header">
+        <h2><span>🔍</span> Research Interests</h2>
+      </div>
+      <div class="card-body">
+        <ul class="sci-list">
+          <li>Geological, Hydrogeological &amp; Hydro-geospatial Investigations</li>
+          <li>Remote Sensing &amp; GIS Applications in Earth, Atmospheric &amp; Water Sciences</li>
+          <li>Advanced Geomatics, UAV-based 3D High-Resolution Imagery &amp; Photogrammetry</li>
+          <li>Groundwater Vulnerability Assessment, DRASTIC Modeling &amp; Erosion Prioritization</li>
+          <li>Subsurface Geophysical Exploration (GPR, Cross-Hole Seismic, ERI)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2><span>⚙️</span> Technical Tools &amp; Software</h2>
+      </div>
+      <div class="card-body" style="padding:0">
+        <table class="tech-table">
+          <tbody>
+            <tr>
+              <th>Languages</th>
+              <td>Hindi (Native), English (Fluent), HTML, C++</td>
+            </tr>
+            <tr>
+              <th>GIS &amp; RS Software</th>
+              <td>ENVI, ERDAS IMAGINE, QGIS, ArcMap, ArcView, LPS, Collateral 3D, MapInfo, Surfer, ILWIS</td>
+            </tr>
+            <tr>
+              <th>Engineering &amp; Utility</th>
+              <td>AutoCAD, WaterGEMS, Hypack, Geosoft, RESSAS, Trimble Business Center (TBC), LGeo, CW Commander, EndNote</td>
+            </tr>
+            <tr>
+              <th>Field Systems</th>
+              <td>Hybrid UAV-VTOL Drones, DGPS/GNSS, Ground Penetrating Radar (GPR), Seismographs, Electrical Resistivity Tomography (ERT), GM Counters</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!-- SECTION 2: Education & Institutional Roles -->
+  <div class="section-grid-2" id="personal">
+    <section class="card">
+      <div class="card-header">
+        <h2><span>🎓</span> Education Details</h2>
+      </div>
+      <div class="card-body">
+        <div class="timeline" style="margin-bottom:20px;">
+<div class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div>
+              <div class="timeline-title"> DGCA Certification Course for Remote Pilot (Category-Rotorcraft VLOS, Class-Small)</div>
+              <div class="timeline-sub">Chhattisgarh Swami Vivekanand Technical University (CSVTU), Bhilai, C.G.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2008</div>
+            <div>
+              <div class="timeline-title">Post Graduate Diploma in RS &amp; GIS Application</div>
+              <div class="timeline-sub">Indian Institute of Remote Sensing (IIRS), ISRO, Dehradun</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2005–2007</div>
+            <div>
+              <div class="timeline-title">Master of Science in Geology (M.Sc.)</div>
+              <div class="timeline-sub">Department of Geology, Ranchi University, Ranchi</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2002–2005</div>
+            <div>
+              <div class="timeline-title">Bachelor of Science in Geology (B.Sc.)</div>
+              <div class="timeline-sub">St. Xavier College, Ranchi University, Ranchi</div>
+            </div>
+          </div>
+        </div>
+   
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2><span>🏛️</span> Institutional Roles &amp; Participation</h2>
+      </div>
+      <div class="card-body">
+        <ul class="sci-list">
+          <li><strong>Samarth ERP Implementation:</strong> Committee Member for executing Ministry of Education's ERP initiative to streamline university administration.</li>
+          <li><strong>Chhattisgarh eOffice System:</strong> Active member driving institutional adoption of digital workflow and administrative transparency.</li>
+          <li><strong>Building Committee Technical Officer:</strong> Managing technical evaluations, infrastructure utilization, and asset management for CSVTU campus.</li>
+          <li><strong>ISRO-IIRS Outreach Coordinator:</strong> Associate University Coordinator facilitating live interactive distance-learning courses in Remote Sensing &amp; GIS.</li>
+          <li><strong>DEIAA Environmental Committee:</strong> Former expert panel member for District Level Environment Impact Assessment Authority (Category B2 Minor Minerals, Mahasamund).</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- SECTION 3: Technical Expertise & Project Portfolio (Graphical) -->
+  <section class="card card-section" id="portfolio">
+    <div class="card-header">
+      <h2><span>📊</span> Technical Expertise &amp; Project Portfolio</h2>
+      <span style="font-size:12px;background:rgba(255,255,255,0.15);padding:3px 10px;border-radius:12px;font-weight:600">110 Technical Projects</span>
+    </div>
+    <div class="card-body">
+      
+      <!-- Graphical Distribution Bar -->
+      <div class="cat-stats">
+        <div class="cat-stat-card" style="border-left-color:#0369a1">
+          <div class="cat-stat-title">Hydrogeology</div>
+          <div class="cat-stat-val">8 Projects</div>
+        </div>
+        <div class="cat-stat-card" style="border-left-color:#92400e">
+          <div class="cat-stat-title">Eng. Geology</div>
+          <div class="cat-stat-val">8 Projects</div>
+        </div>
+        <div class="cat-stat-card" style="border-left-color:#6b21a8">
+          <div class="cat-stat-title">Geophysics</div>
+          <div class="cat-stat-val">16 Projects</div>
+        </div>
+        <div class="cat-stat-card" style="border-left-color:#166534">
+          <div class="cat-stat-title">Geospatial Tech</div>
+          <div class="cat-stat-val">7 Projects</div>
+        </div>
+        <div class="cat-stat-card" style="border-left-color:#9f1239">
+          <div class="cat-stat-title">Geomatics / UAV</div>
+          <div class="cat-stat-val">70 Projects</div>
+        </div>
+        <div class="cat-stat-card" style="border-left-color:#115e59">
+          <div class="cat-stat-title">Environment</div>
+          <div class="cat-stat-val">1 Project</div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="portfolio-controls">
+        <div class="search-box">
+          <input type="text" id="projSearch" placeholder="🔍 Search projects by keyword, client, or location (e.g. SECL, Korba, DGPS, Ash Dyke, GPR)..." onkeyup="filterProjects()">
+        </div>
+        <div class="filter-chips">
+          <button class="chip-btn active" onclick="setFilter('all', this)">All Projects (110)</button>
+          <button class="chip-btn" onclick="setFilter('hydro', this)">Hydrogeology (8)</button>
+          <button class="chip-btn" onclick="setFilter('eng', this)">Engineering Geology (8)</button>
+          <button class="chip-btn" onclick="setFilter('geo', this)">Geophysics (16)</button>
+          <button class="chip-btn" onclick="setFilter('gis', this)">Geospatial Tech (7)</button>
+          <button class="chip-btn" onclick="setFilter('uav', this)">Geomatics / UAV / DGPS (70)</button>
+          <button class="chip-btn" onclick="setFilter('env', this)">Environmental (1)</button>
+        </div>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="project-grid" id="projectGrid">
+        
+        <!-- Hydrogeology (1-8) -->
+        <div class="project-card" data-cat="hydro">
+          <div>
+            <span class="project-tag tag-hydro">Hydrogeology</span>
+            <div class="project-id">Project #1</div>
+            <div class="project-title">Integrated Hydrological Study on the Impact of Coal Mining on the Base Flow in the Downstream of Jhiria West Open Cast Project (1.5 MTY)</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Hasdeo Area, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> South Eastern Coalfields Limited (SECL)</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="hydro">
+          <div>
+            <span class="project-tag tag-hydro">Hydrogeology</span>
+            <div class="project-id">Project #2</div>
+            <div class="project-title">Ground Water Prospect Maps for Chhattisgarh State under Rajiv Gandhi National Drinking Water Mission (Phase-IV)</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> NRSC, ISRO, Hyderabad, Govt of India</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="hydro">
+          <div>
+            <span class="project-tag tag-hydro">Hydrogeology</span>
+            <div class="project-id">Project #3</div>
+            <div class="project-title">Ground Water Quality Maps for Chhattisgarh State under Rajiv Gandhi National Drinking Water Mission (Phase-IV)</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> NRSC, ISRO, Hyderabad, Govt of India</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="hydro">
+          <div>
+            <span class="project-tag tag-hydro">Hydrogeology</span>
+            <div class="project-id">Project #4</div>
+            <div class="project-title">Identification of Potential Zones for Ground Water Development in Severe Drought Affected Villages of Rajnandgaon District (1:10,000 Scale)</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Rajnandgaon District, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> PHED, Govt of Chhattisgarh</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="hydro">
+          <div>
+            <span class="project-tag tag-hydro">Hydrogeology</span>
+            <div class="project-id">Project #5</div>
+            <div class="project-title">Identification of Potential Zones for Ground Water Development in Severe Drought Affected Villages of Bemetara District (1:10,000 Scale)</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Bemetara District, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> PHED, Govt of Chhattisgarh</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="hydro">
+          <div>
+            <span class="project-tag tag-hydro">Hydrogeology</span>
+            <div class="project-id">Project #6</div>
+            <div class="project-title">Identification of Potential Zones for Ground Water Development in Severe Drought Affected Villages of Mungeli District (1:10,000 Scale)</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Mungeli District, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> PHED, Govt of Chhattisgarh</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="hydro">
+          <div>
+            <span class="project-tag tag-hydro">Hydrogeology</span>
+            <div class="project-id">Project #7</div>
+            <div class="project-title">Surface Drainage Plan including Surface Water Conservation Plan for Area of Influence Affected by Mining Operations of Manikpur Open Cast Coal Mine</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Korba Area, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> SECL, Government of India</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="hydro">
+          <div>
+            <span class="project-tag tag-hydro">Hydrogeology</span>
+            <div class="project-id">Project #8</div>
+            <div class="project-title">Hydrographic Survey and Data Processing for Sedimentation Analysis and Modelling of Existing Catchment Capacity of Panchet Reservoir</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Jharkhand</div>
+            <div>🏢 <strong>Client:</strong> Panchet Reservoir Project</div>
+          </div>
+        </div>
+
+        <!-- Engineering Geology (9-16) -->
+        <div class="project-card" data-cat="eng">
+          <div>
+            <span class="project-tag tag-eng">Engineering Geology</span>
+            <div class="project-id">Project #9</div>
+            <div class="project-title">Inspection of Lotlota Ash Dyke for Strengthening/Buttressing at Hasdeo Thermal Power Station (HTPS)</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Korba West, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> CSPGCL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="eng">
+          <div>
+            <span class="project-tag tag-eng">Engineering Geology</span>
+            <div class="project-id">Project #10</div>
+            <div class="project-title">Advanced Surveying and Slope Stability Analysis of Podimar Ash Dyke at Hasdeo Thermal Power Station</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Korba, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> CSPGCL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="eng">
+          <div>
+            <span class="project-tag tag-eng">Engineering Geology</span>
+            <div class="project-id">Project #11</div>
+            <div class="project-title">Advanced Surveying and Slope Stability Analysis of Daganiyakhar Ash Dyke at Hasdeo Thermal Power Station</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Korba, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> CSPGCL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="eng">
+          <div>
+            <span class="project-tag tag-eng">Engineering Geology</span>
+            <div class="project-id">Project #12</div>
+            <div class="project-title">Advanced Surveying and Slope Stability Analysis of Lotlota Ash Dyke at Hasdeo Thermal Power Station</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Korba, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> CSPGCL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="eng">
+          <div>
+            <span class="project-tag tag-eng">Engineering Geology</span>
+            <div class="project-id">Project #13</div>
+            <div class="project-title">Annual Certification of Dindholbhata Ash Dyke in accordance with MoEF&amp;CC Notification dated 31.12.2021</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> CSPGCL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="eng">
+          <div>
+            <span class="project-tag tag-eng">Engineering Geology</span>
+            <div class="project-id">Project #14</div>
+            <div class="project-title">Annual Certification of Jhabu Ash Dyke in accordance with MoEF&amp;CC Notification dated 31.12.2021</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> CSPGCL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="eng">
+          <div>
+            <span class="project-tag tag-eng">Engineering Geology</span>
+            <div class="project-id">Project #15</div>
+            <div class="project-title">Annual Certification of Gorhi/Pandripani Ash Dyke in accordance with MoEF&amp;CC Notification dated 31.12.2021</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> CSPGCL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="eng">
+          <div>
+            <span class="project-tag tag-eng">Engineering Geology</span>
+            <div class="project-id">Project #16</div>
+            <div class="project-title">Annual Certification of Auraikala Ash Dyke in accordance with MoEF&amp;CC Notification dated 31.12.2021</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> CSPGCL</div>
+          </div>
+        </div>
+
+        <!-- Geophysics (17-32) -->
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #17</div>
+            <div class="project-title">Cross Hole Seismic Test and Data Processing for 2 × 200 MW Thermal Power Plant</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Raichur, Karnataka</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #18</div>
+            <div class="project-title">Cross Hole and Down Hole Seismic Test and Data Processing for 2 × 200 MW Thermal Power Plant</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Rajahmundry, Andhra Pradesh</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #19</div>
+            <div class="project-title">Refraction Seismic Test and Data Processing for Thermal Power Plant</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Barauni, Bihar</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #20</div>
+            <div class="project-title">Refraction Seismic Survey and Data Processing for Chenani–Nashri Road Tunnel</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Udhampur, Jammu &amp; Kashmir</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #21</div>
+            <div class="project-title">Refraction Seismic and Electrical Resistivity Survey for Hydrological Project</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Tato, Arunachal Pradesh</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #22</div>
+            <div class="project-title">Seismological Study (Joint Project of IIT Roorkee and India Meteorological Department)</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Delhi</div>
+            <div>🏢 <strong>Client:</strong> IIT Roorkee &amp; IMD</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #23</div>
+            <div class="project-title">Seismological Survey and Mapping for Hydrological Study (Joint Project of NSC and COSTAL)</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Dornala, Andhra Pradesh</div>
+            <div>🏢 <strong>Client:</strong> NSC &amp; COSTAL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #24</div>
+            <div class="project-title">Advanced Underground Utility Detection, GPR Survey and GIS-Based Mapping for IOCL Refinery</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Mathura, Uttar Pradesh</div>
+            <div>🏢 <strong>Client:</strong> IOCL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #25</div>
+            <div class="project-title">Advanced Underground Utility Detection, GPR Survey and GIS-Based Mapping for ONGC Hazira Refinery</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Surat, Gujarat</div>
+            <div>🏢 <strong>Client:</strong> ONGC</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #26</div>
+            <div class="project-title">Underground Utility Detection and GPR-Based GIS Mapping for JANCO BUILDCON Pvt. Ltd.</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Delhi</div>
+            <div>🏢 <strong>Client:</strong> JANCO Buildcon</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #27</div>
+            <div class="project-title">Underground Utility Detection and GPR-Based GIS Mapping for SPML</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Delhi</div>
+            <div>🏢 <strong>Client:</strong> SPML</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #28</div>
+            <div class="project-title">Advanced Underground Utility Detection, GPR Survey and GIS-Based Mapping for ONGC Refinery</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Uran, Mumbai, Maharashtra</div>
+            <div>🏢 <strong>Client:</strong> ONGC</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #29</div>
+            <div class="project-title">Underground Utility Detection, GPR Survey and GIS Mapping for IRCON Infrastructure Projects</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Jaipur and Jodhpur, Rajasthan</div>
+            <div>🏢 <strong>Client:</strong> IRCON</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #30</div>
+            <div class="project-title">Underground Utility Detection, GPR Survey and GIS-Based Mapping for Amritsar Municipal Corporation</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Punjab</div>
+            <div>🏢 <strong>Client:</strong> Amritsar Municipal Corp.</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #31</div>
+            <div class="project-title">Underground Utility Detection, GPR Survey and GIS-Based Mapping for IVRCL Vivekananda Flyover Project</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Kolkata, West Bengal</div>
+            <div>🏢 <strong>Client:</strong> IVRCL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="geo">
+          <div>
+            <span class="project-tag tag-geo">Geophysics</span>
+            <div class="project-id">Project #32</div>
+            <div class="project-title">Underground Utility Detection, GPR Survey and GIS-Based Mapping for EAGA Energy</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Kolkata, West Bengal</div>
+            <div>🏢 <strong>Client:</strong> EAGA Energy</div>
+          </div>
+        </div>
+
+        <!-- Geospatial Technology (33-39) -->
+        <div class="project-card" data-cat="gis">
+          <div>
+            <span class="project-tag tag-gis">Geospatial Technology</span>
+            <div class="project-id">Project #33</div>
+            <div class="project-title">GIS Study and Preparation of Catchment Area Treatment Plan for Rowghat Iron Ore Mine</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> Bhilai Steel Plant (BSP), SAIL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="gis">
+          <div>
+            <span class="project-tag tag-gis">Geospatial Technology</span>
+            <div class="project-id">Project #34</div>
+            <div class="project-title">Preparation of GIS-Based Master Plan of Pt. Ravishankar Shukla University using UAV Aerial Mapping</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Raipur, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> Pt. Ravishankar Shukla University</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="gis">
+          <div>
+            <span class="project-tag tag-gis">Geospatial Technology</span>
+            <div class="project-id">Project #35</div>
+            <div class="project-title">Village Information System for e-Governance</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> India</div>
+            <div>🏢 <strong>Client:</strong> DST, Government of India</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="gis">
+          <div>
+            <span class="project-tag tag-gis">Geospatial Technology</span>
+            <div class="project-id">Project #36</div>
+            <div class="project-title">Geo-referencing, Digitization and Spatial Database Creation for Cadastral Maps of Gap Areas</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> Land Records Dept (LRD), CG</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="gis">
+          <div>
+            <span class="project-tag tag-gis">Geospatial Technology</span>
+            <div class="project-id">Project #37</div>
+            <div class="project-title">Feature Extraction of Parcel Boundaries and Building Footprints for Ten Urban Cities Using Aerial Photography</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> Land Records Dept (LRD), CG</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="gis">
+          <div>
+            <span class="project-tag tag-gis">Geospatial Technology</span>
+            <div class="project-id">Project #38</div>
+            <div class="project-title">Digitization, Geo-referencing and Coordinate Transformation of Cadastral Maps (1:4000 to 1:500 Scale)</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Major Cities of Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> Land Records Dept (LRD), CG</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="gis">
+          <div>
+            <span class="project-tag tag-gis">Geospatial Technology</span>
+            <div class="project-id">Project #39</div>
+            <div class="project-title">Delhi State Spatial Data Infrastructure (DSSDI) Project</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Delhi</div>
+            <div>🏢 <strong>Client:</strong> Govt of NCT of Delhi</div>
+          </div>
+        </div>
+
+        <!-- Geomatics / UAV / DGPS (40-109) -->
+        <div class="project-card" data-cat="uav">
+          <div>
+            <span class="project-tag tag-uav">Geomatics / UAV / DGPS</span>
+            <div class="project-id">Project #40</div>
+            <div class="project-title">Boundary Demarcation and 3D Geospatial Mapping of Solid Waste Dump Site</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Bhilai Township, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> Bhilai Steel Plant (BSP), SAIL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="uav">
+          <div>
+            <span class="project-tag tag-uav">Geomatics / UAV / DGPS</span>
+            <div class="project-id">Project #41</div>
+            <div class="project-title">Advanced Survey and Mapping for Astro Science Centre (1-Hectare Campus)</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> CG Regional Science Centre, Raipur</div>
+            <div>🏢 <strong>Client:</strong> NCSM &amp; Govt of CG</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="uav">
+          <div>
+            <span class="project-tag tag-uav">Geomatics / UAV / DGPS</span>
+            <div class="project-id">Project #42</div>
+            <div class="project-title">Proof of Concept (PoC) for UAV Survey</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Dholera Smart City, Gujarat</div>
+            <div>🏢 <strong>Client:</strong> Ragunath Construction</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="uav">
+          <div>
+            <span class="project-tag tag-uav">Geomatics / UAV / DGPS</span>
+            <div class="project-id">Project #43</div>
+            <div class="project-title">Preparation of Detailed Project Report (DPR) of Greenfield Jhiriya West Open Cast Project including UAV Survey and Mapping</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Madhya Pradesh</div>
+            <div>🏢 <strong>Client:</strong> SECL</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="uav">
+          <div>
+            <span class="project-tag tag-uav">Geomatics / UAV / DGPS</span>
+            <div class="project-id">Project #44</div>
+            <div class="project-title">Design, Estimate and Planning for Narwa Restoration using High-Resolution 3D UAV Mapping</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Pauha–Kurmigundra, Durg, CG</div>
+            <div>🏢 <strong>Client:</strong> Zila Panchayat, Durg</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="uav">
+          <div>
+            <span class="project-tag tag-uav">Geomatics / UAV / DGPS</span>
+            <div class="project-id">Project #45</div>
+            <div class="project-title">Survey, Design, Drawings, Estimates and Report for Group Water Supply Scheme under Jal Jeevan Mission</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Dhamtari &amp; Balod, CG</div>
+            <div>🏢 <strong>Client:</strong> PHED, Govt of CG</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="uav">
+          <div>
+            <span class="project-tag tag-uav">Geomatics / UAV / DGPS</span>
+            <div class="project-id">Project #46</div>
+            <div class="project-title">Establishment of Ground Control Points (GCPs) for Nazul Survey</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> Nava Raipur, Chhattisgarh</div>
+            <div>🏢 <strong>Client:</strong> NRDA</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #47</div><div class="project-title">Boundary Demarcation of Udela Quartz Mine</div></div><div class="project-meta"><div>📍 Basna, Mahasamund, CG</div><div>🏢 Private Mine</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #48</div><div class="project-title">Boundary Demarcation of Panchmukhi Limestone Mine</div></div><div class="project-meta"><div>📍 Bitkuli, Raipur, CG</div><div>🏢 Private Mine</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #49</div><div class="project-title">Boundary Demarcation of Hahaladi Iron Ore Mine</div></div><div class="project-meta"><div>📍 Bhanupratappur, Kanker, CG</div><div>🏢 Monnet Ispat</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #50</div><div class="project-title">Boundary Demarcation of Aridongri Iron Ore Mine</div></div><div class="project-meta"><div>📍 Kachche, Kanker, CG</div><div>🏢 CMDC</div></div></div>
+
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #51</div><div class="project-title">Boundary Demarcation of V.C. Chopda Limestone Mine</div></div><div class="project-meta"><div>📍 Tilda, Raipur, CG</div><div>🏢 Private Mine</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #52</div><div class="project-title">Land Demarcation of Tourism Board Land, Kodar Dam</div></div><div class="project-meta"><div>📍 Mahasamund, CG</div><div>🏢 CG Tourism Board</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #53</div><div class="project-title">Land Demarcation of Tourism Board Land, Gangrel Dam</div></div><div class="project-meta"><div>📍 Dhamtari, CG</div><div>🏢 CG Tourism Board</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #54</div><div class="project-title">Boundary Demarcation of Century Cement Limestone Lease</div></div><div class="project-meta"><div>📍 Tilda, Raipur, CG</div><div>🏢 Century Cement</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #55</div><div class="project-title">Boundary Demarcation of Chandi Limestone Mine</div></div><div class="project-meta"><div>📍 Berla, Bemetara, CG</div><div>🏢 Private Mine</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #56</div><div class="project-title">Boundary Demarcation of Lalmati Singh Sahgaon Limestone Mine</div></div><div class="project-meta"><div>📍 Tilda, Raipur, CG</div><div>🏢 Private Mine</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #57</div><div class="project-title">Boundary Demarcation of Sahgaon Limestone Mine</div></div><div class="project-meta"><div>📍 Tilda, Raipur, CG</div><div>🏢 Private Mine</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #58</div><div class="project-title">Boundary Demarcation of Medesara Limestone Mine</div></div><div class="project-meta"><div>📍 Durg District, CG</div><div>🏢 Private Mine</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #59</div><div class="project-title">Boundary Demarcation of Magsa Pauni Khauna Prospecting Block</div></div><div class="project-meta"><div>📍 Tilda, Raipur, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #60</div><div class="project-title">Boundary Demarcation of Karhi Chandi Prospecting Block</div></div><div class="project-meta"><div>📍 Simga, Balodabazar, CG</div><div>🏢 DGM, CG</div></div></div>
+
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #61</div><div class="project-title">Boundary Demarcation of Keshla Limestone Prospecting Block</div></div><div class="project-meta"><div>📍 Tilda, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #62</div><div class="project-title">Boundary Demarcation of Mohra Limestone Prospecting Block</div></div><div class="project-meta"><div>📍 Tilda, Raipur, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #63</div><div class="project-title">Boundary Demarcation of Eklama–Chelikama Iron Ore Block</div></div><div class="project-meta"><div>📍 Kabirdham District, CG</div><div>🏢 CMDC</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #64</div><div class="project-title">Boundary Demarcation of Murtadand Bauxite Prospecting Block</div></div><div class="project-meta"><div>📍 Ambikapur, Surguja, CG</div><div>🏢 CMDC</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #65</div><div class="project-title">FRL Marking of Paserket Reservoir</div></div><div class="project-meta"><div>📍 Korba District, CG</div><div>🏢 WRD</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #66</div><div class="project-title">FRL Marking of Dhvannala Reservoir</div></div><div class="project-meta"><div>📍 Korba District, CG</div><div>🏢 WRD</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #67</div><div class="project-title">FRL Marking of Korkoma Reservoir</div></div><div class="project-meta"><div>📍 Korba District, CG</div><div>🏢 WRD</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #68</div><div class="project-title">FRL Marking of Rampur Reservoir</div></div><div class="project-meta"><div>📍 Korba District, CG</div><div>🏢 WRD</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #69</div><div class="project-title">FRL Marking of Bhalpahari Reservoir</div></div><div class="project-meta"><div>📍 Korba District, CG</div><div>🏢 WRD</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #70</div><div class="project-title">FRL Marking of Sondur Dam</div></div><div class="project-meta"><div>📍 Nagri, Kanker, CG</div><div>🏢 WRD</div></div></div>
+
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #71</div><div class="project-title">FTL Marking of Devgaon Tank</div></div><div class="project-meta"><div>📍 Narayanpur District, CG</div><div>🏢 WRD</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #72</div><div class="project-title">Canal Alignment Survey for Futhamuda Canal</div></div><div class="project-meta"><div>📍 Dhamtari District, CG</div><div>🏢 WRD</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #73</div><div class="project-title">Boundary Demarcation of Kerwa Coal Block</div></div><div class="project-meta"><div>📍 Korba District, CG</div><div>🏢 CMDC</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #74</div><div class="project-title">Boundary Demarcation of Gare Pelma Sector-III Coal Block</div></div><div class="project-meta"><div>📍 Raigarh District, CG</div><div>🏢 CSPGCL</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #75</div><div class="project-title">Boundary Demarcation of Talaipalli Coal Mining Project</div></div><div class="project-meta"><div>📍 Gharghoda, CG</div><div>🏢 NTPC Ltd.</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #76</div><div class="project-title">MGR Rail Line Survey Project</div></div><div class="project-meta"><div>📍 Gharghoda, CG</div><div>🏢 NTPC Ltd.</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #77</div><div class="project-title">Boundary Demarcation of Sapnadar Bauxite Block</div></div><div class="project-meta"><div>📍 Surguja District, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #78</div><div class="project-title">Boundary Demarcation of Kandraja Bauxite Block</div></div><div class="project-meta"><div>📍 Surguja District, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #79</div><div class="project-title">Compensatory Afforestation (CA) Land Survey for Aridongri Mine</div></div><div class="project-meta"><div>📍 Raigarh District, CG</div><div>🏢 CMDC</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #80</div><div class="project-title">Boundary Demarcation of Gidhmuri Paturiya Coal Block</div></div><div class="project-meta"><div>📍 Pali, Korba, CG</div><div>🏢 CSPGCL</div></div></div>
+
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #81</div><div class="project-title">Boundary Demarcation of Kesla-II Limestone Prospecting Block</div></div><div class="project-meta"><div>📍 Tilda, Raipur, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #82</div><div class="project-title">Boundary Demarcation of Madanpur South Coal Block</div></div><div class="project-meta"><div>📍 Korba District, CG</div><div>🏢 APMDC</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #83</div><div class="project-title">Boundary Demarcation of Suliyar South Coal Block</div></div><div class="project-meta"><div>📍 Singrauli, MP</div><div>🏢 APMDC</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #84</div><div class="project-title">Boundary Demarcation of Guma Limestone Block</div></div><div class="project-meta"><div>📍 Balodabazar District, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #85</div><div class="project-title">CA Land Survey for Forest Clearance of NH-78</div></div><div class="project-meta"><div>📍 Pathalgaon, Jashpur, CG</div><div>🏢 PWD</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #86</div><div class="project-title">CA Land Survey for Plantation (Sub-Jail Construction)</div></div><div class="project-meta"><div>📍 Kondagaon District, CG</div><div>🏢 Home Dept</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #87</div><div class="project-title">Forest Land Survey for MGR Rail Line</div></div><div class="project-meta"><div>📍 Raigarh District, CG</div><div>🏢 NTPC Ltd.</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #88</div><div class="project-title">Boundary Demarcation for CG Council of Science &amp; Technology</div></div><div class="project-meta"><div>📍 Raipur, Chhattisgarh</div><div>🏢 CCOST</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #89</div><div class="project-title">Forest Land Demarcation (10.081 ha) for MGR Rail Line</div></div><div class="project-meta"><div>📍 Raigarh District, CG</div><div>🏢 NTPC Ltd.</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #90</div><div class="project-title">Boundary Demarcation of Pakhritola North Bauxite Block</div></div><div class="project-meta"><div>📍 Bagicha, Jashpur, CG</div><div>🏢 DGM, CG</div></div></div>
+
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #91</div><div class="project-title">Boundary Demarcation of Pakhritola South Bauxite Block</div></div><div class="project-meta"><div>📍 Bagicha, Jashpur, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #92</div><div class="project-title">Boundary Demarcation of Salgi Bauxite Block</div></div><div class="project-meta"><div>📍 Bodla, Kabirdham, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #93</div><div class="project-title">CA Land Survey for Madanpur South Coal Block</div></div><div class="project-meta"><div>📍 Korba District, CG</div><div>🏢 APMDC</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #94</div><div class="project-title">CA Land Survey (20 ha) for Krishi Vigyan Kendra</div></div><div class="project-meta"><div>📍 Kondagaon District, CG</div><div>🏢 IGKV</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #95</div><div class="project-title">CA Land Demarcation for Sub-Jail</div></div><div class="project-meta"><div>📍 Kondagaon District, CG</div><div>🏢 Home Dept</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #96</div><div class="project-title">MGR Phase-II Forest Land Demarcation, TLCMP</div></div><div class="project-meta"><div>📍 Gharghoda, Raigarh, CG</div><div>🏢 NTPC Ltd.</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #97</div><div class="project-title">Land Demarcation under Possession of BALCO</div></div><div class="project-meta"><div>📍 Korba District, CG</div><div>🏢 Revenue Dept</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #98</div><div class="project-title">Boundary Demarcation of Mohra Limestone Prospecting Block</div></div><div class="project-meta"><div>📍 Palari–Simga, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #99</div><div class="project-title">Boundary Demarcation of Parsabhader Limestone Block</div></div><div class="project-meta"><div>📍 Balodabazar District, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #100</div><div class="project-title">Boundary Demarcation of Rawghat Rail Line Alignment &amp; Forest Area</div></div><div class="project-meta"><div>📍 Narayanpur &amp; Kanker, CG</div><div>🏢 Forest Dept</div></div></div>
+
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #101</div><div class="project-title">CA Land Demarcation (29 ha) for MGR Rail Line</div></div><div class="project-meta"><div>📍 Raigarh District, CG</div><div>🏢 NTPC Ltd.</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #102</div><div class="project-title">Approach Road Alignment Survey for Coal Transportation</div></div><div class="project-meta"><div>📍 Gharghoda, Raigarh, CG</div><div>🏢 CSPGCL</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #103</div><div class="project-title">Boundary Demarcation of Kathiya Pachari Limestone Block</div></div><div class="project-meta"><div>📍 Tilda, Raipur, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #104</div><div class="project-title">CA Land Demarcation and Court Building Survey</div></div><div class="project-meta"><div>📍 Surajpur District, CG</div><div>🏢 PWD</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #105</div><div class="project-title">Boundary Demarcation of Laldhurwa Jognipali Limestone Block</div></div><div class="project-meta"><div>📍 Raigarh District, CG</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #106</div><div class="project-title">Road Alignment Survey from Matringa Approach Road to Pendrakhi Village</div></div><div class="project-meta"><div>📍 Surguja District, CG</div><div>🏢 PWD</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #107</div><div class="project-title">Preparation of Land Schedule and GIS Map for Pathari Bauxite Block</div></div><div class="project-meta"><div>📍 Chhattisgarh</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #108</div><div class="project-title">Preparation of Land Schedule and GIS Map for Ghotwani Limestone Block</div></div><div class="project-meta"><div>📍 Chhattisgarh</div><div>🏢 DGM, CG</div></div></div>
+        <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #109</div><div class="project-title">Preparation of Land Schedule and GIS Map for Dankesra Limestone Block</div></div><div class="project-meta"><div>📍 Chhattisgarh</div><div>🏢 DGM, CG</div></div></div>
+
+        <!-- Environmental (110) -->
+        <div class="project-card" data-cat="env">
+          <div>
+            <span class="project-tag tag-env">Environmental Sciences</span>
+            <div class="project-id">Project #110</div>
+            <div class="project-title">Environmental Compliance Audit of Consent to Operate (CTO) as per MoEF&amp;CC and CECB Guidelines for VGL Plant</div>
+          </div>
+          <div class="project-meta">
+            <div>📍 <strong>Location:</strong> IDC, Siltra Phase-II, Raipur, CG</div>
+            <div>🏢 <strong>Client:</strong> VGL Plant / CECB Compliance</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Publication Details -->
+  <section class="card card-section" id="publications">
+    <div class="card-header">
+      <h2><span>📚</span> Publication Details</h2>
+      <span style="font-size:12px;background:rgba(255,255,255,0.15);padding:3px 10px;border-radius:12px;font-weight:600">13 Publications</span>
+    </div>
+    <div class="card-body">
+      <div class="pub-list">
+
+        <div class="pub-item">
+          <div class="pub-year">2026</div>
+          <div class="pub-content">
+            <div class="pub-authors">Sinha, M.K., Multaniya, A.P., Choudhary, R. et al.</div>
+            <div class="pub-title">Introducing Relationship Matrix of Combined USLE and Morphometric Analyses for Prioritization of Soil Erosion Susceptibility Zones.</div>
+            <div class="pub-venue">Journal of the Indian Society of Remote Sensing, Springer.</div>
+            <div class="pub-doi">🔗 <a href="https://doi.org/10.1007/s12524-026-02491-1" target="_blank">https://doi.org/10.1007/s12524-026-02491-1</a></div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <div class="pub-authors">Sinha, M.K., Ghodichore, N., Multaniya, A.P., Shubham</div>
+            <div class="pub-title">UAV-Based High Resolution 3D Imagery (HRI) for Water Resources Restoration Projects in Central India.</div>
+            <div class="pub-venue">Remote Sensing, GIS and Modelling for Water Resource Management, Springer Water, Springer, Cham.</div>
+            <div class="pub-doi">🔗 <a href="https://doi.org/10.1007/978-3-031-99497-5_19" target="_blank">https://doi.org/10.1007/978-3-031-99497-5_19</a></div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <div class="pub-authors">Sahu, Kamal Kishor; Multaniya, Amit P; Sinha, Manish Kumar</div>
+            <div class="pub-title">Hydro-Geospatial Investigation to Propose Water Conservation Sites for Water Management in Limestone Terrain.</div>
+            <div class="pub-venue">Sustainability of Natural Resources: Planning, Development, and Management, CRC Press.</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <div class="pub-authors">Sandhya Ganwer, Manish Kumar Sinha, Amit Prakash Multaniya, Nikhil Ghodichore</div>
+            <div class="pub-title">Introducing reverse Multi Influencing Factor technique in DRASTIC model for groundwater vulnerability assessment.</div>
+            <div class="pub-venue">Groundwater for Sustainable Development, Volume 25, 101106, ISSN 2352-801X.</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <div class="pub-authors">Multaniya, Amit Prakash; Sinha, Manish Kumar; Sahu, Kamal Kishor; Shubham</div>
+            <div class="pub-title">Geospatial technique for the delineation of groundwater potential zones using multi-criteria-based AHP and MIF methods.</div>
+            <div class="pub-venue">Water Supply, 24 (4), 1024–1047, IWA Publishing.</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2022</div>
+          <div class="pub-content">
+            <div class="pub-authors">Manish Kumar Sinha, Nikhil Ghodichore, Amit Prakash Multaniya, Shubham, Surykant Dewangan</div>
+            <div class="pub-title">Ultra-High-Resolution three-dimensional UAV imagery application for increasing the efficiency of irrigation systems.</div>
+            <div class="pub-venue">International Geographical Union (IGU) Thematic Conference.</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2022</div>
+          <div class="pub-content">
+            <div class="pub-authors">Dansena, H., Multaniya, A.P., Sinha, M.K. et al.</div>
+            <div class="pub-title">Cadastral resurvey and integration of geospatial technique using high-resolution satellite image (HRSI): a case study in Indian district.</div>
+            <div class="pub-venue">Applied Geomatics, Springer.</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2021</div>
+          <div class="pub-content">
+            <div class="pub-authors">Akhilesh K Tripathi; Amit Prakash Multaniya and Hemant Dansena</div>
+            <div class="pub-title">Land Suitability Analysis for Cashew Plantation in Bastar district, Chhattisgarh, India: Multi-Criteria Evolution approach of Geospatial Technology.</div>
+            <div class="pub-venue">International Journal of Technology Research and Management, ISSN: 2348-9006.</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2021</div>
+          <div class="pub-content">
+            <div class="pub-authors">Amit P Multaniya; Sanju Verma and MK Beg</div>
+            <div class="pub-title">Assessment of suitable landfill site using geospatial techniques: A case study of Raipur urban region, Chhattisgarh, India.</div>
+            <div class="pub-venue">International Journal of Research GRANTHAALAYAH, 132–148.</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2021</div>
+          <div class="pub-content">
+            <div class="pub-authors">Aniruddha Haldar and Amit Prakash Multaniya</div>
+            <div class="pub-title">Covid 19 Pandemic Period: Time to Understand Climatic Changes of Chhattisgarh State, India.</div>
+            <div class="pub-venue">International Journal of Current Research, 16434–16443.</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2016</div>
+          <div class="pub-content">
+            <div class="pub-authors">Baghmar, N. K.; Dey, T. and Multaniya, A. P.</div>
+            <div class="pub-title">Geospatial Health Management Information System: A Baseline And Monitoring Study.</div>
+            <div class="pub-venue">37th Asian Conference on Remote Sensing (ACRS), 325–334.</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2013</div>
+          <div class="pub-content">
+            <div class="pub-authors">Tisha Dey, Amit P Multaniya and Harish K Sinha</div>
+            <div class="pub-title">Tool for local level Development planning: Combining use of participatory appraisal and GIS.</div>
+            <div class="pub-venue">33rd INCA International Conference on Integrated Decentralized Planning.</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2013</div>
+          <div class="pub-content">
+            <div class="pub-authors">M.K. Beg, Amit Prakash Multaniya, Priya, Harish Sinha &amp; J.R. Verma</div>
+            <div class="pub-title">Groundwater quality mapping of Korba District using Geographic Information System (GIS).</div>
+            <div class="pub-venue">Workshop on Management of Ground Water for Sustenance of Agriculture and Industries, Central Ground Water Board (CGWB), 91–92.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Amit Prakash Multaniya ·  Geoscientist</p>
+  <small> Geoscience  ·  Environment  ·  Water Resources  ·   Geomatics / UAV </small>
+</footer>
+
+<script>
+function setFilter(cat, btn) {
+  document.querySelectorAll('.chip-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  filterProjects();
+}
+
+function filterProjects() {
+  const activeBtn = document.querySelector('.chip-btn.active');
+  const cat = activeBtn ? activeBtn.getAttribute('onclick').match(/'([^']+)'/)[1] : 'all';
+  const query = document.getElementById('projSearch').value.toLowerCase();
+  
+  const cards = document.querySelectorAll('.project-card');
+  cards.forEach(card => {
+    const cardCat = card.getAttribute('data-cat');
+    const text = card.innerText.toLowerCase();
+    
+    const catMatch = (cat === 'all' || cardCat === cat);
+    const searchMatch = (text.indexOf(query) !== -1);
+    
+    if (catMatch && searchMatch) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+
+</body>
+</html>
