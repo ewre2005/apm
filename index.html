@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Professional Profile & Portfolio of Amit Prakash Multaniya, Geoscientist and Scientific Officer.">
-<title>Amit Prakash Multaniya | professional portfolio</title>
+<title>Professional Profile & Portfolio | Amit Prakash Multaniya | </title>
 <style>
 :root{
   --navy:#f5f5ed;
@@ -134,7 +134,7 @@ nav a:hover,nav a:focus{
 .eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:0.1em;background:#ebebe0;color:var(--amber-dark);border:1px solid #d9d9c3;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;margin-bottom:8px}
 h1{font-size:clamp(20px,2.5vw,26px);font-weight:800;line-height:1.15;margin:0 0 6px;letter-spacing:-0.02em;color:var(--blue-accent)}
 .role{font-size:16px;color:var(--blue-accent);font-weight:700;margin:0 0 4px}
-.affiliation{color:var(--muted);font-size:13px;margin:0 0 12px}
+.affiliation{color:var(--muted);font-size:13px;margin:0 0 12px;text-align:justify}
 .contact-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .contact-chip{background:#ffffff;border:1px solid #cbd5e1;border-radius:8px;padding:6px 10px;font-size:11.5px;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,0.05)}
 .contact-chip a{color:var(--blue-accent);font-weight:600}
@@ -144,6 +144,11 @@ h1{font-size:clamp(20px,2.5vw,26px);font-weight:800;line-height:1.15;margin:0 0 
 .stat-box{background:#f5f5ed;border:1px solid #e2e2cc;border-radius:10px;padding:14px 10px;text-align:center}
 .stat-num{font-size:26px;font-weight:800;color:var(--amber-dark);line-height:1}
 .stat-label{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-top:6px;font-weight:700}
+
+/* Print-Only Intro Paragraph Section (Hidden on Website) */
+.print-intro-summary {
+  display: none;
+}
 
 /* Cards & Sections */
 .card-section{margin-bottom:32px}
@@ -163,12 +168,13 @@ h1{font-size:clamp(20px,2.5vw,26px);font-weight:800;line-height:1.15;margin:0 0 
 
 /* Lists & Tables */
 ul.sci-list{list-style:none;padding:0;margin:0}
-ul.sci-list li{position:relative;padding:0 0 12px 24px;font-size:14px;color:var(--ink)}
+ul.sci-list li{position:relative;padding:0 0 12px 24px;font-size:14px;color:var(--ink);text-align:justify}
 ul.sci-list li:last-child{padding-bottom:0}
 ul.sci-list li::before{content:"";position:absolute;left:4px;top:8px;width:8px;height:8px;border-radius:2px;background:var(--amber-dark);transform:rotate(45deg)}
 
 .tech-table{width:100%;border-collapse:collapse;font-size:13px}
 .tech-table th,.tech-table td{padding:12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border)}
+.tech-table td{text-align:justify}
 .tech-table th{width:28%;background:#f5f5ed;color:var(--amber-dark);font-weight:700}
 .tech-table tr:last-child th,.tech-table tr:last-child td{border-bottom:0}
 
@@ -193,15 +199,15 @@ ul.sci-list li::before{content:"";position:absolute;left:4px;top:8px;width:8px;h
 .tag-env{background:#ccfbf1;color:#115e59}
 
 .project-id{font-size:11px;font-weight:800;color:var(--muted);margin-bottom:4px}
-.project-title{font-size:13px;font-weight:700;color:#01124a;line-height:1.4;margin-bottom:12px}
+.project-title{font-size:13px;font-weight:700;color:#01124a;line-height:1.4;margin-bottom:12px;text-align:justify}
 .project-meta{font-size:11px;color:var(--muted);border-top:1px solid #f1f5f9;padding-top:10px;margin-top:auto;display:flex;flex-direction:column;gap:4px}
-.project-meta div{display:flex;gap:6px;align-items:baseline}
+.project-meta div{display:flex;gap:6px;align-items:baseline;text-align:justify}
 
 /* Publications Section */
 .pub-list{display:flex;flex-direction:column;gap:14px}
 .pub-item{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px;display:grid;grid-template-columns:70px 1fr;gap:16px;align-items:start}
 .pub-year{background:#f5f5ed;color:var(--amber-dark);font-weight:800;font-size:13px;padding:6px;border-radius:6px;text-align:center;border:1px solid #e2e2cc}
-.pub-content{font-size:13px;line-height:1.5}
+.pub-content{font-size:13px;line-height:1.5;text-align:justify}
 .pub-authors{font-weight:600;color:var(--amber-dark)}
 .pub-title{font-weight:700;color:var(--ink);margin:3px 0}
 .pub-venue{color:var(--muted);font-style:italic}
@@ -212,8 +218,8 @@ ul.sci-list li::before{content:"";position:absolute;left:4px;top:8px;width:8px;h
 .timeline-item{display:grid;grid-template-columns:100px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--border)}
 .timeline-item:last-child{border-bottom:0}
 .timeline-date{font-weight:800;color:var(--amber-dark);font-size:12px}
-.timeline-title{font-weight:700;font-size:13px;color:var(--ink)}
-.timeline-sub{font-size:12px;color:var(--muted)}
+.timeline-title{font-weight:700;font-size:13px;color:var(--ink);text-align:justify}
+.timeline-sub{font-size:12px;color:var(--muted);text-align:justify}
 
 /* Hidden Signature Block on Web View */
 .print-signature-page {
@@ -290,7 +296,7 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
   .hero {
     padding: 0 0 16px 0 !important;
     border-bottom: 2px solid var(--blue-accent) !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 16px !important;
   }
   .hero-inner {
     display: flex !important;
@@ -335,6 +341,7 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
     font-size: 9.5pt !important;
     color: var(--muted) !important;
     margin-bottom: 8px !important;
+    text-align: justify !important;
   }
   .contact-chip {
     background: #ffffff !important;
@@ -367,6 +374,20 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
   .stat-label {
     font-size: 8pt !important;
     color: var(--muted) !important;
+  }
+
+  /* Print-Only Intro Paragraph Styling (Justified) */
+  .print-intro-summary {
+    display: block !important;
+    background: #f8fafc !important;
+    border-left: 4px solid var(--blue-accent) !important;
+    padding: 12px 16px !important;
+    margin-bottom: 20px !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    color: #1e293b !important;
+    border-radius: 0 8px 8px 0 !important;
+    text-align: justify !important;
   }
 
   /* Preserve Card Manner on Print */
@@ -409,10 +430,14 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
   ul.sci-list li {
     font-size: 9.5pt !important;
     padding-bottom: 8px !important;
+    text-align: justify !important;
   }
   .tech-table th, .tech-table td {
     padding: 8px !important;
     font-size: 9pt !important;
+  }
+  .tech-table td {
+    text-align: justify !important;
   }
   .tech-table th {
     background: #f5f5ed !important;
@@ -428,9 +453,11 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
   }
   .timeline-title {
     font-size: 9.5pt !important;
+    text-align: justify !important;
   }
   .timeline-sub {
     font-size: 8.5pt !important;
+    text-align: justify !important;
   }
 
   /* Publications Cards */
@@ -454,6 +481,7 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
   }
   .pub-content {
     font-size: 9pt !important;
+    text-align: justify !important;
   }
   .pub-doi {
     font-size: 8.5pt !important;
@@ -478,12 +506,16 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
   }
   .project-title {
     font-size: 9.5pt !important;
+    text-align: justify !important;
   }
   .project-meta {
     font-size: 8.5pt !important;
   }
+  .project-meta div {
+    text-align: justify !important;
+  }
 
-  /* Print-Only Signature Block (Appears at the bottom of the last page) */
+  /* Print-Only Signature Block */
   .print-signature-page {
     display: block !important;
     break-inside: avoid;
@@ -501,6 +533,7 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
   }
   .sig-text {
     max-width: 60%;
+    text-align: justify;
   }
   .sig-image-box {
     text-align: right;
@@ -564,7 +597,7 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
           <span class="eyebrow">Geoscience · Geomatics/UAV &amp; Geospatial Specialist</span>
           <h1>Amit Prakash Multaniya</h1>
           <p class="role">Scientific Officer</p>
-          <p class="affiliation">Department of Environmental &amp; Water Resources Engineering<br>University Teaching Department, CSVTU Bhilai, Chhattisgarh, India</p>
+          <p class="affiliation">Environmental &amp; Water Resources Engineering<br>University Teaching Department, CSVTU Bhilai, <br>Chhattisgarh, India</p>
           <div class="contact-row">
             <div class="contact-chip">📞 <a href="tel:+918989568770">+91 8989568770</a></div>
             <div class="contact-chip">✉️ <a href="mailto:amultaniya@gmail.com">amultaniya@gmail.com</a></div>
@@ -596,6 +629,11 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
     </section>
 
     <main>
+
+      <!-- PRINT-ONLY INTRODUCTORY SUMMARY PARAGRAPH -->
+      <div class="print-intro-summary">
+        I am a Geoscience and Geomatics professional with over 15 years of experience in scientific research, technical consultancy, and project management. My expertise spans hydrogeology, engineering geology, geophysics, Remote Sensing, GIS, and UAV-based 3D mapping. I am passionate about integrating scientific knowledge, advanced technologies, and multidisciplinary collaboration to develop innovative, data-driven solutions for sustainable development. I look forward to contributing my experience and expertise to your esteemed team through research, innovation, and impactful technical collaboration.
+      </div>
 
       <!-- SECTION 1: Research Interests & Technical Tools -->
       <div class="section-grid-2" id="expertise">
@@ -1543,16 +1581,14 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
       <div class="print-signature-page">
         <div class="sig-container">
           <div class="sig-text">
-            <p style="margin:0 0 6px 0;">This document forms part of the verified professional portfolio of: </p>
-
-            </div>
+            <p style="margin:0 0 6px 0;">This document forms part of the verified professional portfolio of:</strong>.</p>
+            <div><strong>Amit Prakash Multaniya</strong></div>
+            <div>Scientific Officer, CSVTU Bhilai, Chhattisgarh</div>
+            <div>Email: <a href="mailto:amultaniya@gmail.com">amultaniya@gmail.com</a> | Phone: +91 8989568770</div>
+          </div>
           <div class="sig-image-box">
             <img class="print-sig-img" src="https://raw.githubusercontent.com/ewre2005/apm/refs/heads/main/Amit_sign150.jpg" alt="Amit Prakash Multaniya Signature">
             <div class="sig-label">Signature / Verified Copy</div>
-<div><strong>Amit Prakash Multaniya</strong></div>
-            <div>Raipur, Chhattisgarh, India</div>
-            <div>Email: <a href="mailto:amultaniya@gmail.com">amultaniya@gmail.com</a> | Phone: +91 8989568770</div>
-
           </div>
         </div>
       </div>
