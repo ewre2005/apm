@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Professional Profile & Portfolio of Amit Prakash Multaniya, Geoscientist and Scientific Officer.">
-<title>Professional Profile & Portfolio | Amit Prakash Multaniya | </title>
+<title>Professional Profile & Portfolio | Amit Prakash Multaniya</title>
 <style>
 :root{
   --navy:#f5f5ed;
@@ -259,12 +259,24 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
 }
 
 /* ========================================================
-   EXECUTIVE CV PRINT & PDF STYLESHEET - CARDS, PHOTO & SIGN
+   EXECUTIVE CV PRINT & PDF STYLESHEET - PAGE NUMBERS & LINKS
    ======================================================== */
 @media print {
   @page {
     size: A4;
-    margin: 12mm;
+    margin: 15mm 12mm 18mm 12mm;
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-size: 8.5pt;
+      font-family: system-ui, -apple-system, sans-serif;
+      color: #64748b;
+    }
+    @bottom-left {
+      content: "Web Portfolio: https://ewre2005.github.io/apm/";
+      font-size: 8.5pt;
+      font-family: system-ui, -apple-system, sans-serif;
+      color: #0369a1;
+    }
   }
   
   /* Hide sidebar navigation and UI controls on print */
@@ -601,6 +613,7 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
           <div class="contact-row">
             <div class="contact-chip">📞 <a href="tel:+918989568770">+91 8989568770</a></div>
             <div class="contact-chip">✉️ <a href="mailto:amultaniya@gmail.com">amultaniya@gmail.com</a></div>
+            <div class="contact-chip">🌐 <a href="https://csvtu.ac.in/" target="_blank">Affiliation</a></div>
             <div class="contact-chip">📍 <a href="https://www.google.co.in/maps/place/Gokuldham+Residency+Raipur/@21.2163622,81.5955784,222m/data=!3m1!1e3!4m6!3m5!1s0x3a28de870f9cd737:0x1aa97f8b28a1d903!8m2!3d21.2160912!4d81.5960542!16s%2Fg%2F11bwm5q50d?entry=ttu">Raipur, CG-492013, India</a></div>
           </div>
         </div>
@@ -1581,9 +1594,9 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
       <div class="print-signature-page">
         <div class="sig-container">
           <div class="sig-text">
-            <p style="margin:0 0 6px 0;">This document forms part of the verified professional portfolio of:</strong>.</p>
+            <p style="margin:0 0 6px 0;">This document forms part of the verified professional portfolio of:.</p>
             <div><strong>Amit Prakash Multaniya</strong></div>
-            <div>Scientific Officer, CSVTU Bhilai, Chhattisgarh</div>
+            <div>Raipur, Chhattisgarh, India</div>
             <div>Email: <a href="mailto:amultaniya@gmail.com">amultaniya@gmail.com</a> | Phone: +91 8989568770</div>
           </div>
           <div class="sig-image-box">
@@ -1594,7 +1607,7 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
       </div>
 
       <footer>
-        <p> · Amit Prakash Multaniya · </p>
+        <p> ··· Amit Prakash Multaniya ···</p>
         <small>Geoscience · Environment · Water Resources · Geomatics / UAV</small>
       </footer>
 
