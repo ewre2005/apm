@@ -30,9 +30,25 @@ a:hover{text-decoration:underline}
 .nav-wrap{max-width:1200px;margin:auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px;color:var(--amber-dark);letter-spacing:-0.01em}
 .brand-icon img{width:100%;height:100%;max-width:42px;max-height:42px;object-fit:contain;display:block}
-nav{display:flex;gap:20px;flex-wrap:wrap}
+nav{display:flex;gap:15px;flex-wrap:wrap;align-items:center}
 nav a{color:var(--amber-dark);font-size:13px;font-weight:600;padding:6px 12px;border-radius:6px;transition:all 0.2s}
 nav a:hover,nav a:focus{color:var(--ink);background:rgba(0,0,0,0.05);text-decoration:none}
+
+/* Print Button Style */
+.print-btn {
+  background: var(--blue-accent);
+  color: #fff !important;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.print-btn:hover {
+  background: #0284c7;
+}
 
 /* Hero */
 .hero{color:var(--amber-dark);padding:44px 24px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
@@ -156,6 +172,234 @@ footer p{margin:0 0 6px;color:var(--amber-dark);font-weight:700}
   box-shadow:0 6px 18px rgba(0,0,0,0.2);
 }
 
+/* ========================================================
+   EXECUTIVE CV PRINT & PDF STYLESHEET (PROFESSIONAL FORMAT)
+   ======================================================== */
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+  
+  /* Hide UI elements not needed on a formal printed CV */
+  .site-header, .portfolio-controls, #backToTopBtn, .print-btn, .hero-stats-card {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #111827 !important;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+
+  main {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Elegant Header Layout for Print */
+  .hero {
+    padding: 0 0 16px 0 !important;
+    border-bottom: 2px solid #0369a1 !important;
+    margin-bottom: 20px !important;
+  }
+  .hero-inner {
+    display: block !important;
+  }
+  .profile-photo-wrap {
+    float: right;
+    width: 90px !important;
+    height: 90px !important;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .profile-photo {
+    width: 90px !important;
+    height: 90px !important;
+    border: 2px solid #0369a1 !important;
+    box-shadow: none !important;
+  }
+  .eyebrow {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    color: #0369a1 !important;
+    font-size: 10pt !important;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px !important;
+  }
+  h1 {
+    font-size: 22pt !important;
+    color: #0f172a !important;
+    margin: 0 0 4px 0 !important;
+  }
+  .role {
+    font-size: 13pt !important;
+    color: #0369a1 !important;
+    margin-bottom: 2px !important;
+  }
+  .affiliation {
+    font-size: 10pt !important;
+    color: #4b5563 !important;
+    margin-bottom: 10px !important;
+  }
+  .contact-row {
+    margin-top: 8px !important;
+    gap: 12px !important;
+  }
+  .contact-chip {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    font-size: 9.5pt !important;
+  }
+  .contact-chip a {
+    color: #1f2937 !important;
+    text-decoration: none !important;
+  }
+
+  /* Clean Professional Sections */
+  .section-grid-2 {
+    display: block !important;
+    margin-bottom: 16px !important;
+  }
+  .card-section {
+    margin-bottom: 16px !important;
+    break-inside: avoid;
+  }
+  .card {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    margin-bottom: 16px !important;
+    overflow: visible !important;
+  }
+  .card-header {
+    background: none !important;
+    border-bottom: 1.5px solid #0369a1 !important;
+    padding: 0 0 4px 0 !important;
+    margin-bottom: 10px !important;
+  }
+  .card-header h2 {
+    font-size: 13pt !important;
+    color: #0369a1 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .card-header h2 span {
+    display: none !important; /* Hide emojis in print for formal look */
+  }
+  .card-header div {
+    display: none !important; /* Hide tag counters in header */
+  }
+  .card-body {
+    display: block !important;
+    padding: 0 !important;
+  }
+  .toggle-icon {
+    display: none !important;
+  }
+
+  /* Refined Lists & Timelines for CV */
+  ul.sci-list li {
+    font-size: 10pt !important;
+    padding-bottom: 6px !important;
+  }
+  ul.sci-list li::before {
+    background: #0369a1 !important;
+    top: 6px !important;
+    width: 5px !important;
+    height: 5px !important;
+  }
+
+  .tech-table th, .tech-table td {
+    padding: 6px 8px !important;
+    font-size: 9.5pt !important;
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+  .tech-table th {
+    background: #f9fafb !important;
+    color: #1f2937 !important;
+  }
+
+  .timeline-item {
+    grid-template-columns: 90px 1fr !important;
+    padding: 6px 0 !important;
+    border-bottom: 1px solid #f3f4f6 !important;
+  }
+  .timeline-date {
+    font-size: 9.5pt !important;
+    color: #4b5563 !important;
+  }
+  .timeline-title {
+    font-size: 10pt !important;
+  }
+  .timeline-sub {
+    font-size: 9pt !important;
+  }
+
+  /* Publications Print Styling */
+  .pub-item {
+    background: none !important;
+    border: none !important;
+    padding: 0 0 10px 0 !important;
+    display: block !important;
+    break-inside: avoid;
+  }
+  .pub-year {
+    display: inline-block !important;
+    background: #e0f2fe !important;
+    color: #0369a1 !important;
+    border: none !important;
+    font-size: 8.5pt !important;
+    padding: 1px 6px !important;
+    margin-right: 6px;
+    border-radius: 4px;
+  }
+  .pub-content {
+    font-size: 9.5pt !important;
+    display: inline;
+  }
+  .pub-authors { display: inline; font-weight: 600; }
+  .pub-title { display: inline; font-weight: 700; color: #111827; }
+  .pub-venue { display: inline; font-style: italic; color: #4b5563; }
+  .pub-doi { display: block; font-size: 8.5pt; margin-top: 2px; }
+  .pub-doi a { color: #0369a1 !important; text-decoration: underline !important; }
+
+  /* Projects Filtered View Optimization for Print (Prints summary list) */
+  .project-grid {
+    display: block !important;
+  }
+  .project-card {
+    background: none !important;
+    border: none !important;
+    border-bottom: 1px solid #f3f4f6 !important;
+    border-radius: 0 !important;
+    padding: 6px 0 !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+  .project-tag {
+    background: none !important;
+    color: #0369a1 !important;
+    padding: 0 !important;
+    font-size: 8.5pt !important;
+  }
+  .project-id { display: inline-block; font-size: 8.5pt; }
+  .project-title { font-size: 9.5pt !important; margin-bottom: 2px !important; }
+  .project-meta { border: none !important; padding: 0 !important; font-size: 8.5pt !important; color: #6b7280 !important; flex-direction: row !important; gap: 12px !important; }
+
+  footer {
+    display: none !important;
+  }
+}
+
 @media(max-width:900px){
   .hero-inner{grid-template-columns:1fr}
   .section-grid-2{grid-template-columns:1fr}
@@ -179,6 +423,7 @@ footer p{margin:0 0 6px;color:var(--amber-dark);font-weight:700}
       <a href="#roles">Institutional Roles</a>
       <a href="#publications">Publications</a>
       <a href="#portfolio">Projects</a>
+      <button class="print-btn" onclick="prepareAndPrint()">🖨️ Print CV / PDF</button>
     </nav>
   </div>
 </header>
@@ -509,7 +754,7 @@ footer p{margin:0 0 6px;color:var(--amber-dark);font-weight:700}
     <!-- SECTION 5: Technical Expertise & Project Portfolio (COLLAPSIBLE - DEFAULT CLOSED) -->
     <section class="card card-section" id="portfolio">
       <div class="card-header card-header-collapsible" onclick="toggleSection('portfolioBody', 'portfolioIcon')">
-        <h2><span>📊</span> Project Portfolio</h2>
+        <h2><span>📊</span> TProject Portfolio</h2>
         <div style="display:flex;align-items:center;gap:12px;">
           <span style="font-size:12px;background:rgba(0,0,0,0.05);padding:3px 10px;border-radius:12px;font-weight:700">110 | Technical Projects</span>
           <span class="toggle-icon collapsed" id="portfolioIcon">▼</span>
@@ -1146,7 +1391,7 @@ footer p{margin:0 0 6px;color:var(--amber-dark);font-weight:700}
           <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #105</div><div class="project-title">Boundary Demarcation of Laldhurwa Jognipali Limestone Block</div></div><div class="project-meta"><div>📍 Raigarh District, CG</div><div>🏢 DGM, CG</div></div></div>
           <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #106</div><div class="project-title">Road Alignment Survey from Matringa Approach Road to Pendrakhi Village</div></div><div class="project-meta"><div>📍 Surguja District, CG</div><div>🏢 PWD</div></div></div>
           <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #107</div><div class="project-title">Preparation of Land Schedule and GIS Map for Pathari Bauxite Block</div></div><div class="project-meta"><div>📍 Chhattisgarh</div><div>🏢 DGM, CG</div></div></div>
-          <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #108</div><div class="project-title">Preparation of Land Schedule and GIS Map for Ghotwani Limestone Block</div></div><div class="project-meta"><div>📍 Chhattisgarh</div><div>🏢 DGM, CG</div></div></div>
+          <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Profile #108</div><div class="project-title">Preparation of Land Schedule and GIS Map for Ghotwani Limestone Block</div></div><div class="project-meta"><div>📍 Chhattisgarh</div><div>🏢 DGM, CG</div></div></div>
           <div class="project-card" data-cat="uav"><div><span class="project-tag tag-uav">Geomatics / DGPS</span><div class="project-id">Project #109</div><div class="project-title">Preparation of Land Schedule and GIS Map for Dankesra Limestone Block</div></div><div class="project-meta"><div>📍 Chhattisgarh</div><div>🏢 DGM, CG</div></div></div>
 
           <div class="project-card" data-cat="env">
@@ -1190,6 +1435,21 @@ function toggleSection(bodyId, iconId) {
   }
 }
 
+function prepareAndPrint() {
+  // Automatically expand all collapsible sections before printing for a complete CV layout
+  const bodies = ['rolesBody', 'pubBody', 'portfolioBody'];
+  const icons = ['rolesIcon', 'pubIcon', 'portfolioIcon'];
+  
+  bodies.forEach((bId, idx) => {
+    const el = document.getElementById(bId);
+    const ic = document.getElementById(icons[idx]);
+    if (el) el.style.display = "block";
+    if (ic) ic.classList.remove("collapsed");
+  });
+
+  window.print();
+}
+
 function setFilter(cat, btn) {
   document.querySelectorAll('.chip-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
@@ -1226,6 +1486,13 @@ window.onscroll = function() {
     backToTopBtn.style.display = "none";
   }
 };
+
+function scrollToTotal() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
 
 function scrollToTop() {
   window.scrollTo({
