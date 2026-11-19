@@ -1635,16 +1635,27 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
 <script>
 
 // Increment and display the public site-visit counter.
+// Uses CountAPI Miles Hilliard (public counter; no signup/API key required).
 (async function loadVisitCount() {
   const counter = document.getElementById('visitCount');
   if (!counter) return;
+
+  // Keep this key unique to this portfolio website.
+  const counterKey = 'ewre2005_apm_portfolio_site_visits_2026';
+  const counterUrl = `https://countapi.mileshilliard.com/api/v1/hit/${counterKey}`;
+
   try {
-    const response = await fetch('https://api.counterapi.dev/v1/ewre2005-apm/visits/up', { cache: 'no-store' });
-    if (!response.ok) throw new Error('Counter service unavailable');
+    const response = await fetch(counterUrl, {
+      method: 'GET',
+      cache: 'no-store'
+    });
+    if (!response.ok) throw new Error(`Counter service returned HTTP ${response.status}`);
+
     const data = await response.json();
-    const count = data.count ?? data.value ?? data.total;
-    if (count === undefined || count === null) throw new Error('Counter value missing');
-    counter.textContent = Number(count).toLocaleString('en-IN');
+    const count = Number(data.value);
+    if (!Number.isFinite(count)) throw new Error('Counter response did not contain a valid value');
+
+    counter.textContent = count.toLocaleString('en-IN');
   } catch (error) {
     counter.textContent = 'Unavailable';
     console.warn('Site visit counter could not be loaded:', error);
