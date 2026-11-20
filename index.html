@@ -245,6 +245,19 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
 @keyframes globeSpin{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.globe-icon{animation:none}}
 
+
+/* Real-time visitor globe panel */
+.visitor-globe-panel{
+  width:min(100%,360px);margin:22px auto 14px;padding:14px 12px 12px;
+  border:1px solid rgba(148,163,184,.35);border-radius:18px;
+  background:linear-gradient(145deg,#f8fafc,#e2e8f0);
+  box-shadow:0 10px 28px rgba(2,6,23,.18);color:#1e293b;text-align:center;
+}
+.visitor-globe-panel h3{margin:0 0 10px;font-size:12px;letter-spacing:2px;color:#334155}
+.visitor-globe-frame{width:300px;max-width:100%;height:300px;margin:0 auto;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:50%}
+.visitor-globe-frame iframe,.visitor-globe-frame canvas{max-width:100%}
+.visitor-globe-note{display:block;margin-top:8px;font-size:10px;color:#64748b}
+
 /* Back to Top Button */
 #backToTopBtn{
   display:none;
@@ -1624,6 +1637,13 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
       <footer>
         <p> ··· Amit Prakash Multaniya ···</p>
         <small>Geoscience · Environment · Water Resources · Geomatics / UAV</small>
+        <section class="visitor-globe-panel" aria-label="Global website visitor map">
+          <h3>GLOBAL VISITOR MAP</h3>
+          <div class="visitor-globe-frame" id="visitorGlobe">
+            <script src="https://revolvermaps2.com/embed.js" data-site="diny7hkk259v" data-size="300" data-theme="blue" data-color="77ff3d" async></script>
+          </div>
+          <small class="visitor-globe-note">Live visitor locations · Approximate IP-based geolocation</small>
+        </section>
         <div class="visitor-counter" aria-live="polite">
           <span aria-hidden="true">👁</span> Total Site Visits: <strong id="visitCount">Loading…</strong>
         </div>
@@ -1759,6 +1779,9 @@ function scrollToTop() {
   });
 }
 </script>
+
+
+<!-- RevolverMaps2 globe embed (site key configured) -->
 
 </body>
 </html>
