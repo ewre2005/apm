@@ -238,6 +238,12 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
   font-size:12px;font-weight:600;
 }
 .visitor-counter strong{color:var(--blue-accent);font-variant-numeric:tabular-nums}
+.visitor-location{display:flex;align-items:center;justify-content:center;gap:9px;margin:10px auto 0;color:#dbeafe;font-size:12px}
+.globe-icon{position:relative;display:inline-block;width:25px;height:25px;flex:0 0 25px;border:1.5px solid #7dd3fc;border-radius:50%;background:radial-gradient(circle at 35% 30%,#38bdf8 0,#0e7490 55%,#082f49 100%);box-shadow:0 0 10px rgba(56,189,248,.25);overflow:hidden;animation:globeSpin 9s linear infinite}
+.globe-icon:before{content:'';position:absolute;inset:0 6px;border:1px solid rgba(224,242,254,.85);border-radius:50%}
+.globe-icon:after{content:'';position:absolute;left:0;right:0;top:9px;height:5px;border-top:1px solid rgba(224,242,254,.85);border-bottom:1px solid rgba(224,242,254,.85);border-radius:50%}
+@keyframes globeSpin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.globe-icon{animation:none}}
 
 /* Back to Top Button */
 #backToTopBtn{
@@ -1619,7 +1625,11 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
         <p> ··· Amit Prakash Multaniya ···</p>
         <small>Geoscience · Environment · Water Resources · Geomatics / UAV</small>
         <div class="visitor-counter" aria-live="polite">
-          <span aria-hidden="true">👁</span> Site Visits: <strong id="visitCount">Loading…</strong>
+          <span aria-hidden="true">👁</span> Total Site Visits: <strong id="visitCount">Loading…</strong>
+        </div>
+        <div class="visitor-location" aria-live="polite">
+          <span class="globe-icon" aria-hidden="true"></span>
+          <span>Visitor Location: <strong id="visitorLocation">Detecting location…</strong></span>
         </div>
       </footer>
 
@@ -1659,6 +1669,23 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
   } catch (error) {
     counter.textContent = 'Unavailable';
     console.warn('Site visit counter could not be loaded:', error);
+  }
+})();
+
+// Show the current visitor's approximate city/region/country from IP geolocation.
+// This is approximate network location, not GPS or a street address.
+(async function loadVisitorLocation() {
+  const locationEl = document.getElementById('visitorLocation');
+  if (!locationEl) return;
+  try {
+    const response = await fetch('https://ipapi.co/json/', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`Location service returned HTTP ${response.status}`);
+    const place = await response.json();
+    const parts = [place.city, place.region, place.country_name].filter(Boolean);
+    locationEl.textContent = parts.length ? parts.join(', ') : 'Location unavailable';
+  } catch (error) {
+    locationEl.textContent = 'Location unavailable';
+    console.warn('Visitor location could not be loaded:', error);
   }
 })();
 
