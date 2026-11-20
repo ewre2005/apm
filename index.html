@@ -231,18 +231,17 @@ ul.sci-list li::before{content:"";position:absolute;left:4px;top:8px;width:8px;h
 footer{background:var(--navy);color:var(--amber-dark);text-align:center;padding:24px;border-top:3px solid var(--blue);font-size:13px;margin-top:40px;border-radius:10px}
 footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
 
-
 /* Site visit counter */
 .visitor-counter{
-  display:inline-flex;align-items:center;gap:2px;margin-top:12px;padding:6px 12px;
-  border:1px solid #cbd5e1;border-radius:200px;background:#ffffff;color:var(--muted);
+  display:inline-flex;align-items:center;gap:7px;margin-top:12px;padding:6px 12px;
+  border:1px solid #cbd5e1;border-radius:20px;background:#ffffff;color:var(--muted);
   font-size:12px;font-weight:600;
 }
 .visitor-counter strong{color:var(--blue-accent);font-variant-numeric:tabular-nums}
 .visitor-location{display:flex;align-items:center;justify-content:center;gap:9px;margin:10px auto 0;color:#dbeafe;font-size:12px}
-.globe-icon{position:relative;display:inline-block;width:10px;height:10px;flex:0 0 10px;border:1.5px solid red;border-radius:100%;background:radial-gradient(circle at 45% 35%,#38bdf8 0,#0e7490 55%,#082f49 100%);box-shadow:0 0 10px rgba(56,189,248,.25);overflow:hidden;animation:globeSpin 9s linear infinite}
+.globe-icon{position:relative;display:inline-block;width:25px;height:25px;flex:0 0 25px;border:1.5px solid #7dd3fc;border-radius:50%;background:radial-gradient(circle at 35% 30%,#38bdf8 0,#0e7490 55%,#082f49 100%);box-shadow:0 0 10px rgba(56,189,248,.25);overflow:hidden;animation:globeSpin 9s linear infinite}
 .globe-icon:before{content:'';position:absolute;inset:0 6px;border:1px solid rgba(224,242,254,.85);border-radius:50%}
-.globe-icon:after{content:'';position:absolute;center:0;right:0;top:9px;height:5px;border-top:1px solid rgba(224,242,254,.85);border-bottom:1px solid rgba(224,242,254,.85);border-radius:50%}
+.globe-icon:after{content:'';position:absolute;left:0;right:0;top:9px;height:5px;border-top:1px solid rgba(224,242,254,.85);border-bottom:1px solid rgba(224,242,254,.85);border-radius:50%}
 @keyframes globeSpin{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.globe-icon{animation:none}}
 
@@ -254,10 +253,20 @@ footer p{margin:0 0 4px;color:var(--amber-dark);font-weight:700}
   background:linear-gradient(145deg,#f8fafc,#e2e8f0);
   box-shadow:0 10px 28px rgba(2,6,23,.18);color:#1e293b;text-align:center;
 }
-.visitor-globe-panel h3{margin:0 0 10px;font-size:10px;letter-spacing:10px;color:#334155}
-.visitor-globe-frame{width:270px;max-width:100%;height:270px;margin:0 auto;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:50%}
+.visitor-globe-panel h3{margin:0 0 10px;font-size:12px;letter-spacing:2px;color:#334155}
+.visitor-globe-frame{width:300px;max-width:100%;height:300px;margin:0 auto;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:50%;position:relative}
 .visitor-globe-frame iframe,.visitor-globe-frame canvas{max-width:100%}
+/* Mask the provider's bottom "1 live" status/branding strip.
+   The RevolverMaps widget is cross-origin, so its internal label cannot
+   be styled directly; this small overlay hides only the bottom strip. */
+.visitor-globe-frame::after{
+  content:"";position:absolute;z-index:5;left:0;right:0;bottom:0;height:23px;
+  background:linear-gradient(145deg,#e2e8f0,#e2e8f0);
+  pointer-events:none;
+}
 .visitor-globe-note{display:block;margin-top:8px;font-size:10px;color:#64748b}
+
+
 
 /* Back to Top Button */
 #backToTopBtn{
